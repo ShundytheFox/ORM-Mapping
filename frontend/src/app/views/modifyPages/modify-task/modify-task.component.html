@@ -1,0 +1,31 @@
+<form class="add">
+    <div class="option">
+        <label style="flex-basis: 200px" for="nameTask">Name: </label>
+        <input required [(ngModel)]="task.nameTask" name="nameTask"
+         style="flex-basis: 300px" class="field" type="text" id="nameTask" name="nameTask"><br><br>
+    </div>
+    <div class="option">
+        <label style="flex-basis: 200px" for="idSubject">Subject ID: </label>
+        <input required [(ngModel)]="task.subject.idSubjectMain" name="idSubject"
+         style="flex-basis: 300px" class="field" type="text" id="idSubject" name="idSubject"><br><br>
+    </div>
+    <div class="option">
+        <label style="flex-basis: 200px" for="dateTask">Date: </label>
+        <input required [(ngModel)]="task.dateTask" name="dateTask"
+         style="flex-basis: 300px" class="field" type="text" id="dateTask" name="dateTask"><br><br>
+    </div>
+    <div class="option">
+        <label style="flex-basis: 200px" for="descriptionTask">Description: </label>
+        <input required [(ngModel)]="task.descriptionTask" name="descriptionTask"
+         style="flex-basis: 300px" class="field" type="text" id="descriptionTask" name="descriptionTask"><br><br>
+    </div>
+    <input (click)="onSubmit()" type="submit" value="Submit">
+    <input (click)="return()" type="submit" value="Return">
+    <div class="submitted" [hidden]="!submitted">
+        <h4>You submitted successfully!</h4>
+      </div>
+      <div class="error" [hidden]="!error">
+        <h4>An error has been encountered, please 
+          fill the fields correctly</h4>
+      </div>
+</form>

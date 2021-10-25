@@ -1,0 +1,12 @@
+<body>
+    <div class="background">
+        <br>
+        <mat-card *ngFor="let b of teachers" class="teacher-card">
+            <p class="title">{{b.nameTeacher}}</p>
+                <button mat-button (click)="modifyTeacher(b.idTeacher)">MODIFY</button>
+                <button mat-button (click)="deleteTeacher(b.idTeacher)">DELETE</button>
+        </mat-card>
+        <button mat-raised-button color="primary" class="add" (click)="addAnotherTeacher()">ADD</button>
+    </div>
+</body>
+

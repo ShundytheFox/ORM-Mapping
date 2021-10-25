@@ -1,0 +1,11 @@
+<body>
+    <div class="background">
+        <br>
+        <mat-card *ngFor="let b of subjects" class="subject-card">
+            <p class="title">{{b.nameSubject}}</p>
+                <button mat-button (click)="modifySubject(b.idSubjectMain)">MODIFY</button>
+                <button mat-button (click)="deleteSubject(b.idSubjectMain)">DELETE</button>
+        </mat-card>
+        <button mat-raised-button color="primary" class="add" (click)="addAnotherSubject()">ADD</button>
+    </div>
+</body>

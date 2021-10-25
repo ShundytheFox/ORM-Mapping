@@ -1,0 +1,32 @@
+body {
+    background-color:rgb(122, 122, 122);
+}
+.subject-card {
+    width: 80%;
+    height: 80%;
+    background-color: white;
+    margin-bottom: 40px;
+    margin-left: 6%;
+  }
+  
+.background {
+    background-color: rgb(122, 122, 122);
+}
+
+.subtitle {
+    font-size: 15px;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.description {
+    font-size: 15px;
+    font-weight: lighter;
+}
+
+.add {
+    margin-left: 6%;
+}

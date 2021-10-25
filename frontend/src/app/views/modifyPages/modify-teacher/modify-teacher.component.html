@@ -1,0 +1,16 @@
+<form class="add">
+    <div class="option">
+        <label style="flex-basis: 200px" for="nameTeacher">Name: </label>
+        <input required [(ngModel)]="teacher.nameTeacher" name="nameTeacher"
+         style="flex-basis: 300px" class="field" type="text" id="nameTeacher" name="nameTeacher"><br><br>
+    </div>
+    <input (click)="onSubmit()" type="submit" value="Submit">
+    <input (click)="return()" type="submit" value="Return">
+    <div class="submitted" [hidden]="!submitted">
+        <h4>You submitted successfully!</h4>
+      </div>
+      <div class="error" [hidden]="!error">
+        <h4>An error has been encountered, please 
+          fill the fields correctly</h4>
+      </div>
+</form>

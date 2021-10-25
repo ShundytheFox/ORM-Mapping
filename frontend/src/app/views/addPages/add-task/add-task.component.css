@@ -1,0 +1,13 @@
+.add {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.option {
+    display: flex;
+    margin-right:30px;
+}
+
+.field {
+    height: 10%;
+}
